@@ -6,6 +6,8 @@ var extractTextWebpackPlugin = require('extract-text-webpack-plugin')
 
 var website={publicPath:"http://localhost:8080"}
 let extractText = new extractTextWebpackPlugin("css/[name].css")
+const SpriteLoaderPlugin = require('svg-sprite-loader/plugin');
+
 var config = {
     //入口文件
     entry :path.resolve(__dirname,'./src/index.js')
@@ -40,6 +42,14 @@ var config = {
                   })
                 ,include:path.resolve(__dirname,'src')
             }
+            ,{
+                test: /\.svg$/,
+                use: [
+                    { loader: 'svg-sprite-loader'},  
+                    'svg-transform-loader',
+                    'svgo-loader'
+                ]
+            }
         ]
     }
     ,plugins:[
@@ -51,6 +61,7 @@ var config = {
             url:'http://localhost:8080'
         })
         ,extractText
+        ,new SpriteLoaderPlugin()
     ]
 }
 

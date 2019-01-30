@@ -231,3 +231,42 @@ $ npm install extract-loader --save-dev
 ###准备
 #####注册账号
 http://www.npmjs.com
+
+
+
+
+##SVG
+
+```
+$ npm install svg-sprite-loader --save-dev
+
+$ npm install svg-fill-loader --save-dev
+
+$ npm install svg-transform-loader --save-dev
+
+$ npm install svgo svgo-loader --save-dev
+
+
+
+{
+    test: /\.svg$/,
+    include: [
+        path.resolve(__dirname, '../src/assets'),
+    ],
+    loader: 'svg-sprite?' + JSON.stringify({
+    name: '[name]',
+    prefixize: true,
+    }),
+ }
+
+
+//入口文件中加入如下代码
+
+
+// requires and returns all modules that match
+const requireAll = requireContext => requireContext.keys().map(requireContext);
+ 
+// import all svg
+const req = require.context('./assets/svg', true, /\.svg$/);
+
+```
