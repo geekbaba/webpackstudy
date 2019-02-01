@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <title>this is Path</title>
+    <path d="M 10 10 L 100 100 L 10 100 L 10 10" 
+        style="
+            stroke:rgb(0,0,0);
+            stroke-width:1px;
+            fill:white;
+        "/> 
+
+</svg>

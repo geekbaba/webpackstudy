@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+
+<defs>
+    <symbol id="compass">
+        <polygon fill="#FF0000" points="10,17.2 15.2,66 4.8,66 " />
+        <polygon fill="#002BFF" points="10,114.7 4.8,66 15.2,66 " />
+        <circle cx="10" cy="66.7" r="7.8" />
+        <circle fill="#FFFFFF"  cx="10" cy="66.7" r="2.1" />
+        <text transform="matrix(1 0 0 1 4.8333 15.8215)">N</text>
+    </symbol>
+</defs>
+
+<use xlink:href="#compass" x="100" y="100"/>
+
+
+
+<use xlink:href="#compass" x="100" y="100" transform="translate(50,50)"/>
+
+
+<use xlink:href="#compass" x="100" y="100" transform="scale(2)"/>
+
+
+<use xlink:href="#compass" x="100" y="100" transform="scale(2,1.5)"/>
+
+
+
+<g transform="translate(50,50)">
+    <g transform="scale(3)">
+            <use xlink:href="#compass" x="100" y="100"/>
+    </g>
+</g>
+
+
+<use xlink:href="#compass" x="100" y="100" transform="translate(50,50) scale(2)"/>
+
+<use xlink:href="#compass" x="300" y="300" transform="rotate(30,100,150)"/>
+
+</svg>

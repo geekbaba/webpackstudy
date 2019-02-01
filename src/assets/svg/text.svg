@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <text x="20" y="100"
+    style="
+        font-size:50px;
+        fill:red;
+        font-family:微软雅黑;
+        font-style:italic;
+        text-decoration:underline;
+        word-spacing:10px;
+        
+        text-anchor:start;
+        "
+    >Svg
+    
+    <tspan style="
+        fill:blue;
+    " > Is Good</tspan>
+
+    <tspan style="
+        fill:green;
+    " dy="-8"> 3</tspan>
+
+    <tspan style="
+        fill:green;
+    " dx="5" rotate="90"> Green</tspan>
+
+    </text>
+
+    <text x="20" y="200" style="font-size:14px;fill:black;font-family:微软雅黑;text-anchor:start;">
+        Text
+        <tspan style="baseline-shift:-15px"> Single </tspan>
+    </text>
+    
+</svg>
